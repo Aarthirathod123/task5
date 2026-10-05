@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* scroll nahi ayega */
+}
+
+/* Navbar - WITHOUT FLEX */
+.navbar{
+    width: 100%;
+    height: 10vh;
+    padding: 2vh 3vw;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+.logo, .nav-links, .username, .nav-links li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo{
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 15%;
+}
+.nav-links{
+    width: 68%;
+    text-align: center;
+    list-style: none;
+}
+.nav-links li{
+    margin: 0 1.2vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.username{
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+/* Hero Section - WITHOUT FLEX */
+.hero{
+    width: 100vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+}
+.left-div, .right-div{
+    display: inline-block;
+    vertical-align: middle;
+    height: 80vh;
+}
+.left-div{
+    width: 45%;
+    padding-top: 8vh;
+}
+.left-div h1{
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    color: #222;
+}
+.left-div h1 span{
+    color: #0066ff;
+}
+.left-div p{
+    font-size: 1.1vw;
+    color: #555;
+    margin: 3vh 0;
+    line-height: 1.6vw;
+}
+.left-div button{
+    padding: 1.5vh 2vw;
+    font-size: 1vw;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.right-div{
+    width: 50%;
+    text-align: right;
+}
+.right-div img{
+    width: 90%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
